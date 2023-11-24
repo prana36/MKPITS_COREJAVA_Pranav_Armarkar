@@ -1,7 +1,7 @@
 package com.mkpits.variableScope;
 
 public class StaticVariable1 {
-	static long pranavSalary=100000l;
+	long pranavSalary=100000l;
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
