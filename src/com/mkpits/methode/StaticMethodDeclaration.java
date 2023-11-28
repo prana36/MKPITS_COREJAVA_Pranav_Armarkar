@@ -1,0 +1,74 @@
+package com.mkpits.methode;
+
+public class StaticMethodDeclaration {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//1DirectAccess
+		getallData();
+		System.out.println();
+		System.out.println("Using Direct Access");
+		
+		//2ClassName.methodName()
+		StaticMethodDeclaration.getallData();
+		System.out.println();
+		System.out.println("Using 2ClassName.methodName");
+		
+        //3First Creat Object 		
+		//Objectref.methodName()
+		StaticMethodDeclaration SMD=new StaticMethodDeclaration();
+		SMD.getallData();
+		System.out.println();
+		System.out.println("Using 3First Creat Object//Objectref.methodName()");
+		
+
+	}
+
+	public static void getallData() {
+		getFirstName();
+		getLastName();
+		getEmail();
+		getmobile();
+		getgender();
+		getPassword();
+		
+	}
+
+	public static void getPassword() {
+		String password= "mai nahi bataonga";
+		System.out.println("Password is:- "+password);
+		
+	}
+
+	public static void getgender() {
+		String gender = "Male";
+		System.out.println("Gender is :- "+gender);
+		
+	}
+
+	public static void getmobile() {
+		long mobile = 7890469694l;
+		System.out.println("Mobile No. is:- "+mobile);
+		
+	}
+
+	public static void getEmail() {
+		String email= "pranavarmarkarf36@gmail.com";
+		System.out.println("Email:- "+email);
+		
+	}
+
+	public static void getLastName() {
+		String lname= "Armarkar";
+		System.out.println("last name is:- "+lname);
+		
+	}
+
+	public static void getFirstName() {
+		String name = "Pranav";
+		System.out.println("my name is:- "+name);
+		
+	}
+
+}
