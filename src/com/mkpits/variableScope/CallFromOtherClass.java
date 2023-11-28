@@ -1,5 +1,7 @@
 package com.mkpits.variableScope;
 
+import com.mkpits.datatype.*;
+
 public class CallFromOtherClass {
 	public int pinCode=441111;
 	public long mobile= 9873637206l;
@@ -23,6 +25,12 @@ public class CallFromOtherClass {
 		System.out.println("panId:- " +cfoc.panId);
 		StaticVariable sv= new StaticVariable();
 		System.out.println("Pranav Salary :-" +sv.pranavSalary);
+	
+		LongDataType ldt= new LongDataType();
+		System.out.println("name:- "+ldt.name);
+		
+		ByteDataType bdt=new ByteDataType();
+		System.out.println("My friend is " +bdt.myFrindName);
 	}
 
 }

@@ -1,6 +1,7 @@
 package com.mkpits.datatype;
 
 public class ByteDataType {
+	public String myFrindName="Ashik";
 
 	public static void main(String[] args) {
 		//Logical - Byte Datatype

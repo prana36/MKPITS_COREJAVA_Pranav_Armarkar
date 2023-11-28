@@ -1,6 +1,7 @@
 package com.mkpits.datatype;
 
 public class LongDataType {
+	public String name = "Pranav";
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
