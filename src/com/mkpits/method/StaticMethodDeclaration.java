@@ -3,7 +3,9 @@ package com.mkpits.method;
 public class StaticMethodDeclaration {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// Static Method
+		//If method is defined using static keyword then it is called static method or class method because method scope belongs to class.
+		// Their are Three type to call Static Method 
 		
 		//1DirectAccess
 		getallData();
@@ -23,7 +25,7 @@ public class StaticMethodDeclaration {
 		System.out.println();
 		System.out.println("Using 3First Creat Object//Objectref.methodName()");
 		
-
+   //implementation
 	}
 
 	public static void getallData() {
