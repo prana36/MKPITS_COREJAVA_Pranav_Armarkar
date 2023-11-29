@@ -11,14 +11,15 @@ public class StaticMethodDeclaration {
 		System.out.println("Using Direct Access");
 		
 		//2ClassName.methodName()
+		System.out.println("Using ClassName.methodName");
 		StaticMethodDeclaration.getallData();
 		System.out.println();
-		System.out.println("Using 2ClassName.methodName");
+		
 		
         //3First Creat Object 		
 		//Objectref.methodName()
-		StaticMethodDeclaration SMD=new StaticMethodDeclaration();
-		SMD.getallData();
+		StaticMethodDeclaration smd=new StaticMethodDeclaration();
+		smd.getallData();
 		System.out.println();
 		System.out.println("Using 3First Creat Object//Objectref.methodName()");
 		
