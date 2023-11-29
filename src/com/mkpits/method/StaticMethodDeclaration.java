@@ -1,4 +1,4 @@
-package com.mkpits.methode;
+package com.mkpits.method;
 
 public class StaticMethodDeclaration {
 
