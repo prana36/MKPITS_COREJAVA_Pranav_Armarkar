@@ -1,7 +1,5 @@
 package com.mkpits.method;
 
-import java.lang.reflect.Method;
-
 public class CallingMethod {
 
 	public static void main(String[] args)   //-calling methode
@@ -20,8 +18,10 @@ public class CallingMethod {
 		change.getName(name);;
 		change.getName(lastname);
 		change.getEmail(email);
+		change.getmobile(mobile);
 		change.getgender(gender);
 		change.getPassword(password);
+		
 				
 
 	}
