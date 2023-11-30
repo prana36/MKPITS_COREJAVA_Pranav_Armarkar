@@ -22,6 +22,19 @@ public class CallingMethod {
 		change.getgender(gender);
 		change.getPassword(password);
 		
+		
+		
+		
+		
+		change.getuserName(user);
+		change.getName(name);;
+		change.getName(lastname);
+		change.getEmail(email);
+		change.getmobile(mobile);
+		change.getgender(gender);
+		change.getPassword(password);
+		
+		
 				
 
 	}
