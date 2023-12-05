@@ -1,3 +1,4 @@
+
 package com.mkpits.method;
 
 public class NonStaticMethodWithReturnType 
@@ -15,7 +16,7 @@ public class NonStaticMethodWithReturnType
 }
 
 	//  non-static method 
-	//
+  
 
 		public String getPassword() {
 			String password= "mai nahi bataonga";
@@ -54,5 +55,6 @@ public class NonStaticMethodWithReturnType
 			String name = "Pranav";
 			return name;
 		}
+		
 			
 }
