@@ -1,8 +1,8 @@
-
 package com.mkpits.method;
 
-public class NonStaticMethodWithReturnType 
-{public static void main(String[] args) 
+public class NonStaticMethodWithReturnType
+{
+	public static void main(String[] args) 
 {
 	NonStaticMethodWithReturnType nsmwrt = new NonStaticMethodWithReturnType();
 	
