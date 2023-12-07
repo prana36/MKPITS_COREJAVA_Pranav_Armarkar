@@ -8,7 +8,7 @@ public class Demo {
 		System.out.println("Pranav");
 	}
 	// why we can not use another name instead of 'main'
-	 public static void main (int[] args) {
+	 public static void main (String[] pranav) {
 		
 		//geto();
         System.out.println("hfgcjhv");		 
