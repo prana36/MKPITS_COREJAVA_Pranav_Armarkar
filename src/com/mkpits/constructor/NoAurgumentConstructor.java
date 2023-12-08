@@ -9,7 +9,10 @@ package com.mkpits.constructor;
 public class NoAurgumentConstructor 
 //1)No Aurgument Constructor
 
+
 {
+	int rateOfPen=89;
+	int rateOfPencile=50;
 	
 	
    public static void main(String[] args) {
@@ -20,8 +23,7 @@ public class NoAurgumentConstructor
    // implementation
 	
 	   public NoAurgumentConstructor() {
-		int rateOfPen=89;
-		int rateOfPencile=50;
+		
 		System.out.println("Pen :- "+rateOfPen+ "  Pencile :- "+rateOfPencile);
 		
 	}

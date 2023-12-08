@@ -1,4 +1,4 @@
-package com.mkpits.typecasting;
+ package com.mkpits.typecasting;
 // type casting is a method or process that converts a data type into another data type 
 //in both ways manually and automatically.
 
