@@ -11,20 +11,20 @@ public class ImplicitTypeCasting {
 	// implementation
 	public static void main(String[] args) 
 	{
-		byte a=10;
-		System.out.println("byte:- "+a);
+		byte rollNo=109;
+		System.out.println("rollNo :- "+rollNo);
 		
 		//automatically converts the byte type into int type  
-		int b=a;
-		System.out.println("After convert into int type :- "+b);
+		int class1=rollNo;
+		System.out.println("class1 roll no.  :- "+class1);
 		
 		//automatically converts the integer type into long type  
-		long c=b;
-		System.out.println("After convert into long type :- "+c);
+		long class2=class1;
+		System.out.println("class2 roll no. :- "+class2);
 		
 		//automatically converts the long type into float type  
-        float f=c;
-        System.out.println("After convert into float type :- "+f);
+        float class3=class2;
+        System.out.println("class3 roll no. :- "+class3);
         
         
 	}
