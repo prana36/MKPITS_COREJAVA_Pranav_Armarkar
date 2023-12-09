@@ -10,7 +10,7 @@ public class CallAllMethodMain {
 		atom.getSports();
 		System.out.println(atom.getmyWork());
 	 atom.getMail();
-
+      StaticMethodDeclaration.getFirstName();
 	}
 
 }
