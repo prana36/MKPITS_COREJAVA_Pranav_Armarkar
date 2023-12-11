@@ -20,12 +20,6 @@ public class TypeCastingBetweenPrimitiveToObjectAndViceVersa {
 		
 		
 		
-		
-		
-		
-		
-		
-		
 		//object to primitive
 		String Bill = "346";
 		int a = Integer.parseInt(Bill);
