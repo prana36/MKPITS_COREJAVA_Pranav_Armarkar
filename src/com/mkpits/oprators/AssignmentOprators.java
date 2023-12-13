@@ -25,7 +25,8 @@ public class AssignmentOprators
 	public void add() {
 		int x=27;
 		int y=7;
-		System.out.println(x+=y);
+		int b=x+=y;
+		System.out.println(b);
 	}
 
 	private void equal() 
