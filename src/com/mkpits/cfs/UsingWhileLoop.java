@@ -3,6 +3,8 @@ package com.mkpits.cfs;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class UsingWhileLoop {
 	
@@ -86,6 +88,20 @@ public class UsingWhileLoop {
 		System.out.print("Enter Your Email :- ");
 		email=br.readLine();
 	
+		
+		
+		//Regular Expression   
+        String regex = "^(.+)@(.+)$";  
+        //Compile regular expression to get the pattern  
+        Pattern pattern = Pattern.compile(regex);    
+        //Create instance of matcher   
+        Matcher matcher = pattern.matcher(email);  
+        if (!matcher.matches()) {
+				System.out.println("Email Not Valid");
+			}  
+		
+		
+		
 		
 		System.out.print("Add some amount :- ");
 		balance=Long.parseLong(br.readLine());
