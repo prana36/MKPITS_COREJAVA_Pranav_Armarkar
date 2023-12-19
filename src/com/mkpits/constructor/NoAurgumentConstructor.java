@@ -1,5 +1,5 @@
  package com.mkpits.constructor;
-//A special Methode  having same as class name is called as constructor
+//A special Method  having same as class name is called as constructor
 //constructor do not have return type 
 //class name and constructor should be same
 //their are tow type of constructor

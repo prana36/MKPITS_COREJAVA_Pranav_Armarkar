@@ -31,7 +31,7 @@ public class StaticMethodDeclaration {
 	public static void getallData() {
 		getFirstName();
 		getLastName();
-		getEmail();
+		getEmail(); 
 		getmobile();
 		getgender();
 		getPassword();
