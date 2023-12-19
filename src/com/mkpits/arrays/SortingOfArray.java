@@ -1,4 +1,4 @@
-package com.mkpits.arrays;
+ package com.mkpits.arrays;
 
 import java.io.BufferedReader;
 import java.io.IOException;
