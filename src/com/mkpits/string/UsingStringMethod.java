@@ -29,6 +29,7 @@ public class UsingStringMethod {
 		System.out.println(name.endsWith("v"));// it check String end from v or not it gives boolean value
 		System.out.println(sName.replace('A', 'b'));//it replace value A to b 
 		System.out.println(sName.replaceAll(sName, "ARMARKAR"));
+		System.out.println();
 		
 		System.out.println(name.toLowerCase());//converts in small letters in string name 
 		System.out.println(name.toUpperCase());//converts in capital letters in string name
