@@ -25,6 +25,7 @@ public class UsingTernaryOperators {
 		
 		String output = (num1>num2)?"num1 is greater":"num2 is greater";
 		System.out.println(output);
+		//System.out.println((num1>num2)?"num1 is greater":"num2 is greater");
 	}
 
 }

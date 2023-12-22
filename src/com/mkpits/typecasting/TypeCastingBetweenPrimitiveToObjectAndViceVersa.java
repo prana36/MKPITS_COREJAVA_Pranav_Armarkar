@@ -15,7 +15,7 @@ public class TypeCastingBetweenPrimitiveToObjectAndViceVersa {
 		
 		int rateOfTea = 20;
 		Long l = new Long(rateOfTea);
-		System.out.println(rateOfTea);
+		System.out.println(l);
 		
 		
 		
@@ -24,6 +24,8 @@ public class TypeCastingBetweenPrimitiveToObjectAndViceVersa {
 		String Bill = "346";
 		int a = Integer.parseInt(Bill);
 		System.out.println(a);
+		
+		
 		
 		
 	}
