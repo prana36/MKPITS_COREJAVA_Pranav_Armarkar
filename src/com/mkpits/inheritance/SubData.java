@@ -1,10 +1,11 @@
 package com.mkpits.inheritance;
 
+import java.io.IOException;
 
-public class SubData extends SuperClassData {
-	long mob;
-	char gender;
-	int pinCode;
+public class SubData extends SuperClassData { 
+	String gender,mob,pinCode;
+	
+	
   
 	
 	void getDetails() {
@@ -16,25 +17,44 @@ public class SubData extends SuperClassData {
 	System.out.println("My PinCode is "+pinCode);	
 	}
 
-	void getMobile(long mob) {
-		
-	  
-		if (mob==mob) {
-			
-		} else {
-			System.out.println("invalid");
-
-		}
+	void getMobile() throws NumberFormatException, IOException {
+		 System.out.print("Enter Mobile No. ");
+		 while (true) {
+			 
+			 mob=br.readLine();
+			 if (mob.isEmpty()) {
+	    		 System.out.println("Plz Enter Mobile No. ");
+	    		 continue;
+				
+			}break;
+		 }
 		this.mob=mob;
 	}
-	void getGender(char gender) {
-		//System.out.println(gender);
+	
+	void getGender() throws IOException {
+		 while (true) {
+			 gender = br.readLine();
+	    	 if (gender.isEmpty()) {
+	    		 System.out.println("Plz Enter gender ");
+	    		 continue;
+				
+			}break;
+		 }
+		
 		this.gender=gender;
 	}
 	
-	void getPinCode(int pinCode) {
+	void getPinCode() throws IOException {
+		 System.out.print(" Enter PinCode ");
 		
-		//System.out.println(pinCode);
+		while (true) {
+			pinCode = br.readLine();
+	    	 if (pinCode.isEmpty()) {
+	    		 System.out.println("Plz Enter PinCode ");
+	    		 continue;
+				
+			}break;
+		 }
 		this.pinCode=pinCode;
 	}
 	
