@@ -77,5 +77,5 @@ public class ShriHospital {
 		System.out.println("Sugar is "+sugar);
 		this.sugar=sugar;
 	}
-	
+	 
 }
