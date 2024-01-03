@@ -1,5 +1,6 @@
 package com.mkpits.abstractions;
 
+import java.beans.beancontext.BeanContextServiceProviderBeanInfo;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -161,11 +162,11 @@ public class BankRegistration extends DepositeWithdrow {
 		}
          }
          
-         otp = (int)Math.floor(Math.random()*10000);
+         otp = (int)Math.floor(Math.random()*100000);
          System.out.print("Your Otp is :- "+otp);
          this.otp=otp;
          
-         System.out.print("Please Enter Otp :- ");
+         System.out.print("\nPlease Enter Otp :- ");
          while(true) {
         	 otp1=Integer.parseInt(br.readLine());
         	 if (otp==otp1) {
@@ -178,7 +179,7 @@ public class BankRegistration extends DepositeWithdrow {
          }
         
        
-		accountNumber =(long)Math.floor(Math.random()*10000000);
+		accountNumber =(long)Math.floor(Math.random()*100000000000l);
 		 System.out.print("Thank you \nyour Account Number is  :- "+accountNumber);
 		
 	}
@@ -186,9 +187,16 @@ public class BankRegistration extends DepositeWithdrow {
 	@Override
 	void amountDeposite() throws NumberFormatException, IOException {
 		System.out.print("Enter Deposite Amount :- ");
+		while(true) {
 		deposite =Long.parseLong(br.readLine());
+		if (deposite<499) {
+			System.out.print("Deposite Amount Should be More Than 500 :- ");
+			continue;
+		}
+		break;
+		}
 		balance += deposite;
-		System.out.print("Deposite succesfully Your Balance :- "+balance);
+		System.out.print("Deposite succesfully Now Your Balance is :- "+balance);
 		
 	}
 
@@ -196,28 +204,36 @@ public class BankRegistration extends DepositeWithdrow {
 	void amountWithdrow() throws NumberFormatException, IOException {
 		System.out.print("Enter Withdrow Amount :- ");
 		withdrow=Long.parseLong(br.readLine());
+		while(true) {
+			if (withdrow<199) {
+				System.out.println("Withdrow Amount Should be More Than 200");
+				continue;
+			}
+			break;
+		}
 		balance -= withdrow;
-		System.out.print("Withdrow succesfully Your Balance :- "+balance);
+		System.out.print("Withdrow succesfully Now Your Balance is :- "+balance);
 		
 	}
 
 	@Override
 	void balanceInquiry() {
-		balance += deposite;
-		balance -= withdrow;
-		System.out.print("Balance is :- "+balance);
+//		balance += deposite;
+//		balance -= withdrow;
+		System.out.print("Account no. is :- "+accountNumber);
+		System.out.print("Your Balance is :- "+balance);
 		
 	}
 	
 	void accountDetails() {
 		
-		System.out.print("Account Holder Name :- "+name);
-		System.out.print("Mobile No. :- "+mob);
-		System.out.print("Aadhar No. :- "+aadhar);
-		System.out.print("Account Type is :- "+accountType);
-		System.out.print("Email Id is :- "+email);
-		System.out.print("Balance is :- "+balance);
-		System.out.print("Account no. is :- "+accountNumber);
+		System.out.println("Account Holder Name :- "+name);
+		System.out.println("Mobile No. :- "+mob);
+		System.out.println("Aadhar No. :- "+aadhar);
+		System.out.println("Account Type is :- "+accountType);
+		System.out.println("Email Id is :- "+email);
+		System.out.println("Balance is :- "+balance);
+		System.out.println("Account no. is :- "+accountNumber);
 		
 	}
 	
