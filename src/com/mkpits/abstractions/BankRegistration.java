@@ -51,7 +51,7 @@ public class BankRegistration extends DepositeWithdrow {
 		break;
 
 	default:
-		System.out.println("Enter Valid Choice");
+		System.err.println("Enter Valid Choice");
 		break;
 	}
        System.out.println("\n Do You Wish to Continue Y|N");
@@ -66,7 +66,7 @@ public class BankRegistration extends DepositeWithdrow {
 		while(true) {
 		name = br.readLine();
 		if (name.isEmpty()) {
-			System.out.print("Please Enter Name :- ");
+			System.err.print("Please Enter Name :- ");
 			continue;
 		}
 		break;
@@ -77,7 +77,7 @@ public class BankRegistration extends DepositeWithdrow {
     	mob=br.readLine();
 //		String mob1= String.valueOf(mob);
 		if (mob.length()!=10|| mob.isEmpty()||!mob.matches("\\d+")) {
-			System.out.print("Please Enter vailed Mobile No. :- ");
+			System.err.print("Please Enter vailed Mobile No. :- ");
 			continue;
 		}
 		break;
@@ -88,7 +88,7 @@ public class BankRegistration extends DepositeWithdrow {
 		while(true) {
         aadhar = br.readLine();
         if (!aadhar.matches("\\d+")|| aadhar.isEmpty()|| aadhar.length()!=12) {
-        	System.out.print("Please Enter Vailed Aadhar No. :- ");
+        	System.err.print("Please Enter Vailed Aadhar No. :- ");
 			continue;
 		}
         break;
@@ -98,7 +98,7 @@ public class BankRegistration extends DepositeWithdrow {
 		while(true) {
 		accountType = br.readLine();
 		 if (accountType.isEmpty()) {
-			 System.out.println("Please Enter Account Type ");
+			 System.err.println("Please Enter Account Type ");
 			continue;
 		}
 		 break;
@@ -118,7 +118,7 @@ public class BankRegistration extends DepositeWithdrow {
         //Create instance of matcher   
         Matcher matcher = pattern.matcher(email);  
         if (!matcher.matches()||email.isEmpty()) {
-				System.out.print("Email Not Valid Please Enter Valid Email :- ");
+				System.err.print("Email Not Valid Please Enter Valid Email :- ");
 				
 				continue;
 			} 
@@ -131,7 +131,7 @@ public class BankRegistration extends DepositeWithdrow {
         while(true) {
         	 String b =br.readLine();
         	if (b.isEmpty()) {
-        		System.out.print("please Enter Some Amount :- ");
+        		System.err.print("please Enter Some Amount :- ");
         		
 				continue;
 			}
@@ -196,6 +196,7 @@ public class BankRegistration extends DepositeWithdrow {
 		break;
 		}
 		balance += deposite;
+	
 		System.out.print("Deposite succesfully Now Your Balance is :- "+balance);
 		
 	}

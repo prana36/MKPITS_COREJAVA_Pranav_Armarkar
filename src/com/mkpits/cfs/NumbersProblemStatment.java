@@ -14,11 +14,18 @@ public class NumbersProblemStatment {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		System.out.print("Enter a  num :- ");
 		int num = Integer.parseInt(br.readLine());
-		int rem,sum = 0,ne=0;
+		int rem,sum = 0;
 		//int n= num,ne,result;
 		
 		
-		while(num!=0) {
+		while(num!=0|| sum>10) {
+			
+			if (num==0) 
+			{
+				num=sum;
+				sum=0;
+				
+			}
 			
 			
 			rem=num%10;
@@ -26,22 +33,22 @@ public class NumbersProblemStatment {
 			sum= sum+rem;
 			
 			num=num/10;
-			
-			
-//			System.out.println(sum);
+			//			System.out.println(sum);
 			//sum=(sum%10)+(sum/10);
 			
 		}
-		//System.out.println(sum);
-		//System.out.println("sigle num is "+num);
-		while(sum!=0) {
-			ne=ne+(sum%10);
-			sum=sum/10;
-		}
-		System.out.println(ne);
+//		//System.out.println(sum);
+//		//System.out.println("sigle num is "+num);
+//		while(sum!=0) {
+//			ne=ne+(sum%10);
+//			sum=sum/10;
+//		}
+		System.out.println("Remaing sum is :-"+sum);
 
 
 	}
+	
+	
 	
 	
 
