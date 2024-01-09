@@ -18,13 +18,14 @@ public class Calculator {
 	{
 		
 	Calculator ca = new Calculator();
-	//ca.addition();
+	
 		
 	}
 
 
 		Calculator() throws NumberFormatException, IOException
 	     {
+			System.out.println("Calculator");
 
 	    	 System.out.print("Enter 1st No. :- ");
 	    	 while (true) {
@@ -56,13 +57,15 @@ public class Calculator {
 	    	 char ch = 'y';
 	 		while (ch == 'y' || ch == 'Y') 
 	 		{		
-	 		System.out.println("1.Addition");
+	 		System.out.println("1.Addition \n2.Substraction");
 	         System.out.print("Enter choice :- ");
 	         int  choice = Integer.parseInt(br.readLine()); 
 	        
 	        switch (choice) {
 	 	case 1: addition();
 	 		break;
+	 	case 2: substraction();
+ 		break;
 	 		
 	 	default:
 			System.err.println("Enter Valid Choice");
@@ -77,10 +80,12 @@ public class Calculator {
 	 	
    }
 		
-		  void addition()throws NumberFormatException, IOException 
+
+
+		void addition()throws NumberFormatException, IOException 
 		  {
              
-		 			while(true) {
+		 			
 		 				double sum = num1+num2;
 				 		
 			 			System.out.println(+sum);
@@ -100,23 +105,59 @@ public class Calculator {
 									
 									if(n2.isEmpty()|| !n2.matches(n2))
 									{
-										
+									
 										System.err.print("please   ");
 									   continue;
 									}
 									 double n1 = Double.parseDouble(n2);
 									sum+=n1;
 									
-									continue;
+									break;
 								
 							}
 				 			break;
 				 		}
 				 		System.out.print("Addition is :- "+sum);
 				 			
-				 	  
-		 			}
-		 			 
 				
 			}
+
+		   void substraction() throws IOException {
+			   
+
+				double tot= num1-num2;
+		 		
+	 			System.out.println(+tot);
+		 		
+		 		char p = 'y';
+		 		while (true) 
+		 		{
+		 			System.out.print("\n Do You Wish to sub no. Y|N :- ");
+					 p =  (char) br.read();
+						br.readLine();
+					 
+		 			if (p=='y'||p=='Y') 
+		 			{
+		 				System.out.println("Enter no . please ");
+		                  
+		                   String n2 = br.readLine();
+							
+							if(n2.isEmpty()|| !n2.matches(n2))
+							{
+							
+								System.err.print("please   ");
+							   continue;
+							}
+							 double n1 = Double.parseDouble(n2);
+							tot-=n1;
+							
+							break;
+						
+					}
+		 			break;
+		 		}
+		 		System.out.print("Addition is :- "+tot);
+			
+			
+		}
 }
