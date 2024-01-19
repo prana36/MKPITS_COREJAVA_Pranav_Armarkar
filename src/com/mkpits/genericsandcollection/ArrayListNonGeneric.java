@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class ArrayListNonGeneric {
   ////array list using  Non Generic Type
-	//Non Bounded 
+	//
 	
 	public static void main(String[] args) 
 	{
