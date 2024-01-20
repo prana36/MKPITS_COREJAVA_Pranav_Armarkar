@@ -25,15 +25,12 @@ public class ProblemStatment2 {
 		}
 		System.out.print("Size of list is :- "+obj.size());
  
-		System.out.println("Enter position to Replace ");
+		System.out.println("\nEnter position to Replace ");
 		int po=Integer.parseInt(br.readLine());
 		System.out.println("enter car name to Replace ");
 		String c=br.readLine();
 		
 		obj.set(po-1,c );
-		
-		 
-		
 		
 		for (String str : obj) {
 			System.out.println("Cars are "+str);
