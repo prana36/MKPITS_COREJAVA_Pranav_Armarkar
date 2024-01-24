@@ -21,6 +21,7 @@ public class UsingArrayList {
 		}
 		//System.out.println("List is "+st);
 		st.forEach(n -> System.out.println("Array Element is :- "+n));
+		st.forEach(System.out::println);
 
 	}
 
